@@ -1,0 +1,116 @@
+header .navbar {
+  background: linear-gradient(to bottom, #545454, #201e1e);
+  max-width: 100%;
+  margin: auto;
+}
+header .navbar #navbar {
+  justify-content: flex-end;
+}
+header .navbar ul li {
+  display: block;
+  float: right;
+  flex-direction: column;
+  text-align: center center;
+}
+header .navbar ul li a {
+  text-decoration: none;
+  font-size: 1.35em;
+  color: #fff;
+  font-family: "abyssinica SIL", serif;
+  padding: 30px;
+}
+header .navbar ul li a:hover {
+  transform: scale 1.1;
+  color: rgba(233, 185, 185, 0.384);
+}
+
+header #navbarNav {
+  justify-content: flex-end;
+}
+
+header .logo img {
+  height: 80px;
+  float: left;
+}
+header .logo img:hover {
+  transform: scale(1.1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #201e1e;
+  color: #fff;
+}
+body h1 {
+  font-size: 3.5em;
+}
+body h2 {
+  font-size: 2.7em;
+}
+body h3 {
+  font-size: 2em;
+}
+body p {
+  font-size: 1.25;
+}
+
+body #hero {
+  display: grid;
+  grid-template-rows: 20vh 1fr;
+  height: 90vh;
+  color: #fff;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Nyc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+body #hero h2 {
+  font-family: "Cutive Mono", monospace;
+  font-size: 13vh;
+  padding-top: 1vh;
+  padding-left: 3vh;
+}
+body #hero span {
+  display: block;
+  animation: typing 4s steps(30), blink 0.5s infinite step-end alternate;
+  white-space: nowrap;
+  border-right: 1px solid;
+  width: auto;
+  overflow: hidden;
+}
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100vh;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+body #hero h3 {
+  justify-self: end;
+  align-self: flex-end;
+  padding-bottom: 3vh;
+  font-family: "abyssinica SIL", serif;
+}
+
+body #Nosotros {
+  padding: 20px 12px;
+}
+body #Nosotros .container {
+  text-align: center;
+  justify-content: end;
+  padding: 20px 12px;
+}
+
+/*# sourceMappingURL=style.css~.map */

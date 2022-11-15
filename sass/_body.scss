@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #201e1e;
+    color: #fff;
+    h1{font-size: 3.5em;}
+    h2{font-size: 2.7em;}
+    h3{font-size: 2em;}
+    p{font-size: 1.25;}
+}
+
+body{
+
+    #hero{
+        display: grid;
+        grid-template-rows: 20vh 1fr;
+        height: 90vh;
+        color: #fff;
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/Nyc.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        h2{
+            font-family: 'Cutive Mono', monospace;
+            font-size: 13vh;
+            padding-top: 1vh;
+            padding-left: 3vh;
+
+        }
+
+        span{
+            display: block;
+            animation: typing 4s steps(30), blink .5s infinite step-end alternate;
+            white-space: nowrap;
+            border-right: 1px solid;
+            width: auto;
+            overflow: hidden;
+
+            @keyframes typing{
+                from{width: 0%;}
+                to {width: 100vh;}
+            }
+
+            @keyframes blink{
+                50% {border-color: transparent;}
+            }
+        }
+
+        h3{
+            justify-self: end;
+            align-self: flex-end;
+            padding-bottom: 3vh;
+            font-family: 'abyssinica SIL', serif;
+        }
+    }
+}
+
+body{
+    #Nosotros{
+        padding: 20px 12px;
+
+        .container{
+            text-align: center;
+            justify-content: end;
+            padding: 20px 12px;
+        }
+    }
+}

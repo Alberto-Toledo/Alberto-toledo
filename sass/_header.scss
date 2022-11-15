@@ -1,0 +1,59 @@
+header {
+  
+    .navbar{
+            background: linear-gradient(to bottom, #545454, #201e1e);
+            max-width: 100%;
+            margin: auto;
+
+            #navbar{
+                justify-content: flex-end;
+            }
+        ul{
+
+            li{
+                display: block;
+                float: right;
+                flex-direction: column;
+                text-align: center center;
+                
+                a{
+                    text-decoration: none;
+                    font-size: 1.35em;
+                    color: #fff;
+                    font-family: 'abyssinica SIL', serif;
+                    padding: 30px;
+
+                    &:hover{
+                        transform: scale (1.1);
+                        color: rgba(233, 185, 185, 0.384);
+                    }
+                }
+            }
+        }
+    }
+}
+
+header #navbarNav{
+    
+  justify-content: flex-end;
+    
+}
+
+header {
+    
+  .logo img{
+            
+       height: 80px;
+       float: left;
+
+           &:hover{
+                transform: scale(1.1);
+            
+            }
+    }
+    
+}
+
+
+
+
