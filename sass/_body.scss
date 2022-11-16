@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+/* Inicio PAgina Inicio */
 body{
     margin: 0;
     background-color: #201e1e;
@@ -77,7 +77,10 @@ body{
     }
 }
 
-@media only screen and (min-width: 780px){
+/* Fin de pagina inicio */
+
+/* Inicio de mediaquery */
+@media  (min-width: 780px){
 
     #Nosotros{
         h2{
@@ -123,4 +126,100 @@ body{
         }
     }
 
+    main{
+        #productos{
+            #container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                padding: 20px;
+                max-width: 100%;
+                margin: auto;
+            }
+        }
+    }
+
+}
+
+/* Fin de mediaquery inicio */
+
+/* Inicio  pagina de productos */
+
+main{
+    #productos{
+        #container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            padding: 20px;
+            max-width: 100%;
+            margin: auto;
+
+            .btn{
+                background-color: grey;
+            }
+
+            .card-uno{
+                padding: 10px;
+                display: block;
+                align-items: center;
+                justify-content: center;
+                background-color: #545454;
+                color: #fff;
+
+                .card-body{
+                    text-align: center;
+                }
+            }
+
+            .card-dos{
+                padding: 10px;
+                display: block;
+                align-items: center;
+                justify-content: center;
+                background-color: #545454;
+                color: #fff;
+                text-align: center;
+            }
+
+            .card-tres{
+                padding: 10px;
+                display: block;
+                align-items: center;
+                justify-content: center;
+                background-color: #545454;
+                color: #fff;
+                text-align: center;
+            }
+
+            .card-cuatro{
+                padding: 10px;
+                display: block;
+                align-items: center;
+                justify-content: center;
+                background-color: #545454;
+                color: #fff;
+                text-align: center;
+            }
+
+            .card-cinco{
+                padding: 10px;
+                display: block;
+                align-items: center;
+                justify-content: center;
+                background-color: #545454;
+                color: #fff;
+                text-align: center;
+            }
+
+            .card-seis{
+                padding: 10px;
+                display: block;
+                align-items: center;
+                justify-content: center;
+                background-color: #545454;
+                color: #fff;
+                text-align: center;
+            }
+        }
+    }
 }
