@@ -113,4 +113,50 @@ body #Nosotros .container {
   padding: 20px 12px;
 }
 
+footer {
+  background: linear-gradient(to bottom, #201e1e, #545454);
+  max-width: 100%;
+  margin: auto;
+  color: #fff;
+  font-family: "abyssinica SIL", serif;
+}
+footer #container-1 {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer #container-1 .box h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer #container-1 .box figure img {
+  width: 100px;
+}
+footer #container-1 .redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer #container-1 .redes .facebook {
+  padding: 10px;
+}
+footer #container-1 .redes .facebook img {
+  height: 25px;
+}
+footer #container-1 .redes .facebook img:hover {
+  transform: scale(1.1);
+}
+footer #container-1 .redes .instagram {
+  padding: 10px;
+}
+footer #container-1 .redes .instagram img {
+  height: 25px;
+}
+footer #container-1 .redes .instagram img:hover {
+  transform: scale(1.1);
+}
+
 /*# sourceMappingURL=style.css~.map */

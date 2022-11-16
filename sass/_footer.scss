@@ -1,0 +1,65 @@
+footer {
+    background: linear-gradient(to bottom, #201e1e, #545454);
+    max-width: 100%;
+    margin: auto;
+    color: #fff;
+    font-family: 'abyssinica SIL', serif;
+
+    #container-1{
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .box h3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box figure img{
+            width: 100px;
+
+        }
+
+        .redes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .facebook{
+                padding: 10px;
+
+                img{
+                    height: 25px;
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .instagram{
+                padding: 10px;
+
+                img{
+                    height: 25px;
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        
+    }
+
+}
+
+
+
+
+   
+
+   
+
