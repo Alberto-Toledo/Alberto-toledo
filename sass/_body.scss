@@ -64,11 +64,63 @@ body{
 body{
     #Nosotros{
         padding: 20px 12px;
-
+        
+         h2{
+            text-align: center;
+            justify-content: center;
+        }
         .container{
             text-align: center;
             justify-content: end;
             padding: 20px 12px;
         }
     }
+}
+
+@media only screen and (min-width: 780px){
+
+    #Nosotros{
+        h2{
+            text-align: center;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: auto;
+
+            .img-container-uno{
+                background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/Molienda.jpeg);
+                background-size: cover;
+                background-position: center center;
+                height: 300px;
+                width: 900px;
+
+                p{
+                    width: 50%;
+                    text-align: justify;
+                    padding: 0px 20px;
+                }
+            }
+            
+            .img-container-dos{
+                background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/Molino.jpg);
+                background-size: cover;
+                background-position: center center;
+                height: 300px;
+                width: 900px;
+
+                p{
+                    width: 50%;
+                    padding: 0px 20px;
+                    max-width: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                }
+            }
+        }
+    }
+
 }

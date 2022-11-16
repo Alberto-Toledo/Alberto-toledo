@@ -36,6 +36,16 @@ header .logo img:hover {
   transform: scale(1.1);
 }
 
+@media only screen and (min-width: 768px) {
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav {
+    flex-direction: row;
+    padding: 30px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -107,12 +117,54 @@ body #hero h3 {
 body #Nosotros {
   padding: 20px 12px;
 }
+body #Nosotros h2 {
+  text-align: center;
+  justify-content: center;
+}
 body #Nosotros .container {
   text-align: center;
   justify-content: end;
   padding: 20px 12px;
 }
 
+@media only screen and (min-width: 780px) {
+  #Nosotros h2 {
+    text-align: center;
+  }
+  #Nosotros .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+  }
+  #Nosotros .container .img-container-uno {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Molienda.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 900px;
+  }
+  #Nosotros .container .img-container-uno p {
+    width: 50%;
+    text-align: justify;
+    padding: 0px 20px;
+  }
+  #Nosotros .container .img-container-dos {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Molino.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 900px;
+  }
+  #Nosotros .container .img-container-dos p {
+    width: 50%;
+    padding: 0px 20px;
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}
 footer {
   background: linear-gradient(to bottom, #201e1e, #545454);
   max-width: 100%;
@@ -159,4 +211,4 @@ footer #container-1 .redes .instagram img:hover {
   transform: scale(1.1);
 }
 
-/*# sourceMappingURL=style.css~.map */
+/*# sourceMappingURL=style.css.map */
