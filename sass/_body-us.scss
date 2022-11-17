@@ -1,0 +1,61 @@
+@media only screen and (min-width: 780px){
+    .quienes-somos{
+       text-align: center;
+        font-family: 'abyssinica SIL', serif;
+        font-size: 1em;
+    }
+
+    .QS1{
+        text-align: justify center;
+        font-family: 'abyssinica SIL', serif;
+        margin: 20px;
+        margin-bottom: 0px;
+    }
+
+    .QS2{
+        text-align: justify center;
+        font-family: 'abyssinica SIL', serif;
+        margin: 20px;
+        margin-top: 0px;
+    }
+
+    .carousel{
+        width: 400px;
+        height: 500px;
+        margin-left: 35%;
+        .carousel-inner{
+            img{
+            width: fit-content;
+            height: fit-content;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 779px){
+
+    .quienes-somos{
+        text-align: center;
+         font-family: 'abyssinica SIL', serif;
+         font-size: 1em;
+    }
+ 
+    .QS1{
+         text-align: justify;
+         font-family: 'abyssinica SIL', serif;
+         margin: 20px;
+         margin-bottom: 0px;
+    }
+ 
+    .QS2{
+         text-align: justify;
+         font-family: 'abyssinica SIL', serif;
+         margin: 20px;
+         margin-top: 0px;
+    }
+
+    .carousel{
+        display: none;
+    }
+}

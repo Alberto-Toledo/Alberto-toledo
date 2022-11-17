@@ -13,7 +13,8 @@ body{
     h3{font-size: 2em;}
     p{font-size: 1.25;}
 }
-
+/* Mediaquey pc*/
+@media only screen and (min-width: 780px){
 body{
 
     #hero{
@@ -63,26 +64,6 @@ body{
 
 body{
     #Nosotros{
-        padding: 20px 12px;
-        
-         h2{
-            text-align: center;
-            justify-content: center;
-        }
-        .container{
-            text-align: center;
-            justify-content: end;
-            padding: 20px 12px;
-        }
-    }
-}
-
-/* Fin de pagina inicio */
-
-/* Inicio de mediaquery */
-@media  (min-width: 780px){
-
-    #Nosotros{
         h2{
             text-align: center;
         }
@@ -125,101 +106,59 @@ body{
             }
         }
     }
+}
+}
 
-    main{
-        #productos{
-            #container{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                padding: 20px;
-                max-width: 100%;
-                margin: auto;
+/* Mediaquery mobil*/
+@media only screen and (max-width: 779px){
+
+    #hero{
+        display: grid;
+        grid-template-rows: 20vh 1fr;
+        height: 100%;
+        width: 100%;
+        color: #fff;
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/Nyc.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+
+        h2{
+            font-family: 'Cutive Mono', monospace;
+            font-size: 5vh;
+            padding-top: 1vh;
+            padding-left: 3vh;
+
+        }
+
+        h3{
+            justify-self: end;
+            align-self: flex-end;
+            padding-bottom: 1vh;
+            font-family: 'abyssinica SIL', serif;
+            font-size: 3vh;
+        }
+    }
+
+    body{
+        #Nosotros{
+            padding: 20px 12px;
+            
+             h2{
+                text-align: center;
+                justify-content: center;
+            }
+            .container{
+                text-align: center;
+                justify-content: end;
+                padding: 20px 12px;
             }
         }
     }
 
+    
 }
 
-/* Fin de mediaquery inicio */
+/* Fin de mediaquery */
 
 /* Inicio  pagina de productos */
-
-main{
-    #productos{
-        #container{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            padding: 20px;
-            max-width: 100%;
-            margin: auto;
-
-            .btn{
-                background-color: grey;
-            }
-
-            .card-uno{
-                padding: 10px;
-                display: block;
-                align-items: center;
-                justify-content: center;
-                background-color: #545454;
-                color: #fff;
-
-                .card-body{
-                    text-align: center;
-                }
-            }
-
-            .card-dos{
-                padding: 10px;
-                display: block;
-                align-items: center;
-                justify-content: center;
-                background-color: #545454;
-                color: #fff;
-                text-align: center;
-            }
-
-            .card-tres{
-                padding: 10px;
-                display: block;
-                align-items: center;
-                justify-content: center;
-                background-color: #545454;
-                color: #fff;
-                text-align: center;
-            }
-
-            .card-cuatro{
-                padding: 10px;
-                display: block;
-                align-items: center;
-                justify-content: center;
-                background-color: #545454;
-                color: #fff;
-                text-align: center;
-            }
-
-            .card-cinco{
-                padding: 10px;
-                display: block;
-                align-items: center;
-                justify-content: center;
-                background-color: #545454;
-                color: #fff;
-                text-align: center;
-            }
-
-            .card-seis{
-                padding: 10px;
-                display: block;
-                align-items: center;
-                justify-content: center;
-                background-color: #545454;
-                color: #fff;
-                text-align: center;
-            }
-        }
-    }
-}

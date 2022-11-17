@@ -5,7 +5,7 @@ header {
             max-width: 100%;
             margin: auto;
 
-            #navbar{
+            .navbar{
                 justify-content: flex-end;
             }
         ul{
@@ -21,7 +21,7 @@ header {
                     font-size: 1.35em;
                     color: #fff;
                     font-family: 'abyssinica SIL', serif;
-                    padding: 30px;
+                    padding: 20px;
 
                     &:hover{
                         transform: scale (1.1);
@@ -31,13 +31,14 @@ header {
             }
         }
     }
+
+    #navbarNav{
+    
+        justify-content: flex-end;
+          
+      }
 }
 
-header #navbarNav{
-    
-  justify-content: flex-end;
-    
-}
 
 header {
     
@@ -54,7 +55,7 @@ header {
     
 }
 
-@media  (min-width: 780px){
+@media  (max-width: 779px){
 
     header{
         .container{
@@ -67,6 +68,25 @@ header {
             padding: 0px;
         }
 
+    }
+
+    .navbar{
+        ul{
+            li{
+                display: block;
+                float: right;
+                flex-direction: column;
+                text-align: center center;
+                a{
+                    text-decoration: none;
+                    font-size: 1.35em;
+                    color: #fff;
+                    font-family: 'abyssinica SIL', serif;
+                    padding: 0px;
+                    
+                }
+            }
+        }
     }
 }
     
